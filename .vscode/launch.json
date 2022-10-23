@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "name": "自动埋点",
+      "program": "${workspaceFolder}/auto-track/src/index.js",
+      "request": "launch",
+      "type": "node"
+    }
+  ]
+}
