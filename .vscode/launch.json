@@ -5,6 +5,12 @@
       "program": "${workspaceFolder}/auto-track/src/index.js",
       "request": "launch",
       "type": "node"
+    },
+    {
+      "name": "自动国际化",
+      "program": "${workspaceFolder}/auto-i18n/src/index.js",
+      "request": "launch",
+      "type": "node"
     }
   ]
 }
