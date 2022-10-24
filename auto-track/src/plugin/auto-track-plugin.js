@@ -30,8 +30,10 @@ const autoTrackPlugin = declare((api, options, dirname) => {
               }
             },
           });
+          // 引入tracker模块
           if (!state.trackerImportId) {
             state.trackerImportId = importModule.addDefault(path, "tracker", {
+              // generateUid(name) 生成作用域内唯一的名字，根据 name 添加下划线，比如 name 为 a，会尝试生成 _a，如果被占用就会生成 __a，直到生成没有被使用的名字
               nameHint: path.scope.generateUid("tracker"),
             }).name;
             state.trackerAST = api.template.statement(
@@ -53,6 +55,7 @@ const autoTrackPlugin = declare((api, options, dirname) => {
           const ast = api.template.statement(
             `{${state.trackerImportId}();return PREV_BODY;}`
           )({ PREV_BODY: bodyPath.node });
+          // 用某个节点替换当前节点
           bodyPath.replaceWith(ast);
         }
       },
