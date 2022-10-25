@@ -11,6 +11,12 @@
       "program": "${workspaceFolder}/auto-i18n/src/index.js",
       "request": "launch",
       "type": "node"
+    },
+    {
+      "name": "自动生成API文档",
+      "program": "${workspaceFolder}/auto-document/src/index.js",
+      "request": "launch",
+      "type": "node"
     }
   ]
 }
