@@ -17,6 +17,12 @@
       "program": "${workspaceFolder}/auto-document/src/index.js",
       "request": "launch",
       "type": "node"
+    },
+    {
+      "name": "代码检查linter",
+      "program": "${workspaceFolder}/linter/src/index.js",
+      "request": "launch",
+      "type": "node"
     }
   ]
 }
