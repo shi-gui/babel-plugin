@@ -23,6 +23,12 @@
       "program": "${workspaceFolder}/linter/src/index.js",
       "request": "launch",
       "type": "node"
+    },
+    {
+      "name": "类型检查",
+      "program": "${workspaceFolder}/type-check/src/index.js",
+      "request": "launch",
+      "type": "node"
     }
   ]
 }
