@@ -29,6 +29,12 @@
       "program": "${workspaceFolder}/type-check/src/index.js",
       "request": "launch",
       "type": "node"
+    },
+    {
+      "name": "压缩混淆",
+      "program": "${workspaceFolder}/mangle-compress/src/index.js",
+      "request": "launch",
+      "type": "node"
     }
   ]
 }
