@@ -35,6 +35,12 @@
       "program": "${workspaceFolder}/mangle-compress/src/index.js",
       "request": "launch",
       "type": "node"
+    },
+    {
+      "name": "js解释器",
+      "program": "${workspaceFolder}/js-interpreter/src/index.js",
+      "request": "launch",
+      "type": "node"
     }
   ]
 }
