@@ -41,6 +41,12 @@
       "program": "${workspaceFolder}/js-interpreter/src/index.js",
       "request": "launch",
       "type": "node"
-    }
+    },
+    {
+      "name": "模块遍历器",
+      "program": "${workspaceFolder}/module-iterator/src/index.js",
+      "request": "launch",
+      "type": "node"
+  },
   ]
 }
